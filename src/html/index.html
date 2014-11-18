@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<title>eDM Helper </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/lib/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="assets/js/lib/jquery/dist/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/lib/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body>
+<div class="container">
+	<div id="logo"><img src="assets/images/logo.png" height="30px"></div>
+	<br/>
+	<nav>
+	<a href="#home">Home</a> | <a href="#edit">Edit</a> | <a href="#cheatsheet">Cheatsheet</a>
+	</nav>
+	<div class="view" ng-view></div>
+</div>
+</body>
+</script>
