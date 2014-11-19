@@ -20,5 +20,13 @@
     "gulp-bower": "0.0.7",
     "streamqueue": "^0.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prkr88/eDM-Helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prkr88/eDM-Helper/issues"
+  },
+  "homepage": "https://github.com/prkr88/eDM-Helper"
 }
