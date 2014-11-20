@@ -1,0 +1,13 @@
+<a href="#home">Back to campaigns</a>
+<h1>Campaign Preview</h1>
+<p>View and edit the content in this campaign.</p>
+<hr/>
+<label>Campaign Name:</label> {{data.campaigns.campaignId.global.name}}<br/>
+<label>Created by:</label> {{data.campaigns.campaignId.global.author}}</br>
+<label>Client:</label> {{data.campaigns.campaignId.global.client}}</br>
+<label>Send Link:</label> <a href="/newsletter.html" target="_blank"><strike>Open in new window</a></strike> (not feature complete)
+<hr/>
+<button style="float:right" ng-hide="isEditing" ng-click="setEditing(true)">Edit Content</button>
+<button style="float:right" ng-show="isEditing" ng-click="setEditing(false)">Finished</button>
+<div ng-hide="isEditing" ng-include="'newsletterContent.html' "></div>
+<div ng-show="isEditing" ng-include=" 'edit.html' "></div>

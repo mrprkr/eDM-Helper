@@ -1,6 +1,40 @@
-<h1>Edit view</h1>
-<br/>
-<br/>
-<p> Need to hook up a CMS before this is useful</p>
+<h2>Global</h2>
+<label>Campaign Name</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.global.name"><br/><br/>
+<label>Author</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.global.author"><br/><br/>
 
-<input type="text" ng-model="test">
+<hr/>
+<h2>Header</h2>
+<label>Text</label><br/>
+<textarea cols="63" rows="5" ng-model="data.campaigns.campaignId.header.text"></textarea><br/><br/>
+
+<label>Background Image (URL)</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.header.backgroundImage">
+<div style="display:inline-block; position:absolute; margin-left:15px">
+	<label>Image Preview</label><br/>
+	<img ng-src="{{data.campaigns.campaignId.header.backgroundImage}}" width="200px">
+</div><br/><br/>
+
+<label>Background Color</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.header.backgroundColor">
+<div style="display:block; height:10px; width:400px; background-color: {{data.campaigns.campaignId.header.backgroundColor}}"></div><br/>
+
+<label>Text Color</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.header.textColor">
+<div style="display:block; height:10px; width:400px; background-color: {{data.campaigns.campaignId.header.textColor}};"></div>
+
+<br/><br/>
+<hr/>
+<h2>Introduction</h2>
+<label>Text</label><br/>
+<textarea cols="63" rows="5" ng-model="data.campaigns.campaignId.introduction.text"></textarea>
+<br/><br/>
+<label>Article 1</label><br/>
+<input type="text" ng-model="data.campaigns.campaignId.article1">
+<br/>
+<br/>
+
+<!-- <label>New Campaign</label><br/>
+<input type="text" ng-model="newCampaignName">
+<button ng-click="addCampaign(newCampaignName)">Add campaign</button> -->

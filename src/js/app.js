@@ -27,12 +27,16 @@ angular.module('app',['ngRoute', 'firebase'])
 	})
 
 
-	.controller('mainController', function($scope, $firebase){
+	.controller('mainController', function($scope, $firebase, $firebaseAuth){
 		var ref = new Firebase("https://edmaker.firebaseio.com");
+		var auth = $firebaseAuth(ref);
+		
 		var sync = $firebase(ref);
 		var syncObject = sync.$asObject();
 		syncObject.$bindTo($scope, "data");
 		// console.log(syncObject);
+		
+
 
 		$scope.isEditing = false;
 		$scope.setEditing = function(value){
